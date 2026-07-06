@@ -394,22 +394,22 @@
       <section class="stats" id="summary"></section>
 
       <nav class="nav" aria-label="Навигация по странице">
-        <a href="#themes">Музыкальные темы</a>
-        <a href="#vocal-jingles">Вокальные джинглы</a>
+        <a href="#themes">Вокальные джинглы</a>
+        <a href="#vocal-jingles">Доп информация</a>
       </nav>
 
       <section id="themes">
         <div class="section-head">
-          <h2>Музыкальные темы</h2>
-          <p>Треки сгруппированы по темам. Внутри каждой темы можно прослушать версии и сравнить звучание.</p>
+          <h2>Вокальные джинглы</h2>
+          <p>Треки сгруппированы по муз. темам. Внутри каждой темы можно прослушать версии и сравнить звучание.</p>
         </div>
         <div class="themes-grid" id="themesGrid"></div>
       </section>
 
       <section id="vocal-jingles">
         <div class="section-head">
-          <h2>Вокальные джинглы</h2>
-          <p>Отдельная группа вокальных джинглов для быстрого прослушивания и сравнения версий.</p>
+          <h2>Дополнительная информация</h2>
+          <p>Отдельная группа джинглов для быстрого прослушивания и сравнения версий.</p>
         </div>
         <div class="jingles-grid" id="jinglesGrid"></div>
       </section>
@@ -525,7 +525,7 @@
       const grid = document.getElementById("jinglesGrid");
 
       if (!vocalJingles.length) {
-        grid.innerHTML = `<div class="empty-message">Вокальные джинглы пока не найдены.</div>`;
+        grid.innerHTML = `<div class="empty-message">Дополнительная информация.</div>`;
         return;
       }
 
